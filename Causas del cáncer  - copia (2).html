@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Causas del Cáncer</title>
+    <link rel="stylesheet" href="decoración.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#causas">Causas</a></li>
+                <li><a href="#prevencion">Prevención</a></li>
+                <li><a href="#estadisticas">Estadísticas</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección Hero -->
+        <section id="inicio" class="hero">
+            <h1>Las Causas del Cáncer</h1>
+            <p>Explora, aprende y actúa para prevenir esta enfermedad.</p>
+            <button id="learnMore">Descubre más</button>
+        </section>
+
+        <!-- Sección Causas -->
+        <section id="causas">
+            <h2>¿Qué causa el cáncer?</h2>
+            <p>El cáncer tiene múltiples causas, como factores genéticos, ambientales y hábitos de vida.</p>
+            <div class="causas-grid">
+                <div>
+                    <img src="imagnes/img1.jpg" alt="Genética">
+                    <h3>Factores Genéticos</h3>
+                    <p>Mutaciones heredadas de los padres.</p>
+                </div>
+                <div>
+                    <img src="imagnes/img2.jpg" alt="Hábitos de vida">
+                    <h3>Estilo de Vida</h3>
+                    <p>El consumo de tabaco y alcohol afecta negativamente.</p>
+                </div>
+                <div>
+                    <img src="imagnes/img3.jpg" alt="Factores Ambientales">
+                    <h3>Factores Ambientales</h3>
+                    <p>Exposición a radiación y sustancias químicas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Prevención -->
+        <section id="prevencion">
+            <h2>Prevención</h2>
+            <ul>
+                <li>Come frutas y verduras diariamente.</li>
+                <li>Evita fumar y beber alcohol.</li>
+                <li>Realiza actividad física con regularidad.</li>
+                <li>Haz chequeos médicos anuales.</li>
+            </ul>
+            <p id="dynamicText">Un estilo de vida saludable reduce el riesgo de cáncer.</p>
+            <button onclick="cambiarMensaje()">¡Consejo rápido!</button>
+        </section>
+
+        <!-- Sección Estadísticas -->
+        <section id="estadisticas">
+            <h2>Estadísticas Globales</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo de Cáncer</th>
+                        <th>Casos Anuales</th>
+                        <th>Supervivencia (%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pulmón</td>
+                        <td>2.2 millones</td>
+                        <td>20%</td>
+                    </tr>
+                    <tr>
+                        <td>Mama</td>
+                        <td>2.3 millones</td>
+                        <td>85%</td>
+                    </tr>
+                    <tr>
+                        <td>Colon</td>
+                        <td>1.9 millones</td>
+                        <td>65%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Sección Testimonios -->
+        <section id="testimonios">
+            <h2>Historias Inspiradoras</h2>
+            <div class="testimonios-container">
+                <blockquote>
+                    <p>"Después de mi diagnóstico, aprendí a vivir cada día al máximo."</p>
+                    <cite>- María López</cite>
+                </blockquote>
+                <blockquote>
+                    <p>"La prevención me salvó la vida. ¡Hazte un chequeo hoy!"</p>
+                    <cite>- Juan Pérez</cite>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- Sección Galería -->
+        <section id="galeria">
+            <h2>Galería</h2>
+            <div class="galeria-grid">
+                <img src="imagnes/img4.jpg" alt="Vida Saludable">
+                <img src="imagnes/img5.jpg" alt="Ejercicio">
+                <img src="imagnes/img6.jpg" alt="Familia Sana">
+                <img src="imagnes/img7.jpg" alt="Prevención">
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto">
+            <h2>Contáctanos</h2>
+            <form id="contactForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Escribe tu email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="formStatus"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Prevención del Cáncer. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
